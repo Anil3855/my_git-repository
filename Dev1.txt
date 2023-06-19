@@ -1,0 +1,66 @@
+we have 4 environments 1. Dev 2.QA 3. UAT 4. PROD. Dev we are used earlier, now developer using they 
+local enviroments after testing code in Dev they will send to QA Then UAT , Once we get sign off  for the 
+UAT, we are releasing to prod.
+
+We have Build and deployment pipelines in QA, They are automated through webhooks Whenever they merge 
+any code to a specific branch The job triggered Automatically, Here we dont watch daily basis. Once they tested 
+in QA environment they moved to UAT enviroment .
+
+UAT : in UAT there are two perminant basis enviroments one is CI-UK and UAT-IE apart from this  we have 
+two more enviroments 1. UAT-DK, 2. UAT-PE. 
+Once they tested in UAT environment then it will go to prod, The testing happened upon 
+the CI-UK (regression) branch. and UAT-IE (sprint) branch, CI-UK Regression branch is the code that they 
+have first that should be released into prod enviroment , UAT-IE sprint branch is the current code that the 
+developers are pushing.
+
+Once they will push the code they all done with code then it will be  sync with CI-UK branch. then testing 
+team test 7 days are more test the code then This UIT-IE Sprint will go anther sprint . Once they happy with 
+code CI-UK, then sign off and Deploy in the prod using WPR ( weekly patch release) 
+
+Prod Here we have one click jobs we have 13 environments to deploy in to the  production.
+
+
+After correction:
+
+
+During our KT session, let's discuss the different environments we work with: Dev, QA, UAT, and Prod. 
+Previously, we used Dev environment, but now developers are utilizing their local environments for code 
+testing. Once the code is tested in Dev, it is sent to QA. After QA testing, it moves to UAT. When we receive
+ sign-off for UAT, we release it to the production environment (Prod).
+
+In QA, we have build and deployment pipelines that are automated through webhooks. Whenever code is
+ merged into a specific branch, the corresponding job is triggered automatically. We don't need to monitor 
+this on a daily basis. Once testing is completed in the QA environment, the code is moved to UAT.
+
+UAT consists of two permanent environments: CI-UK and UAT-IE. Additionally, we have two more 
+environments, UAT-DK and UAT-PE. Once the code is tested in UAT, it proceeds to the production 
+environment. Testing is performed on the CI-UK (regression) branch and UAT-IE (sprint) branch. 
+The CI-UK Regression branch contains the initial code that needs to be released to the Prod environment, 
+while the UAT-IE Sprint branch contains the current code being pushed by developers.
+
+Once the developers are finished pushing their code, it is synchronized with the CI-UK branch. The testing 
+team then tests the code for 7 days or more. Once they are satisfied with the code in CI-UK, they provide 
+sign-off, and the code is deployed in the Prod environment using the Weekly Patch Release (WPR) process.
+
+In the Prod environment, we have one-click jobs available to deploy to the 13 production environments.
+
+Build and Deployment Process  
+We have multiple services, with some running using the "systemctl" service, 
+while others run as Docker services.
+                                           
+
+Build Process:
+------------------------
+"Our build process involves first cloning the code from the repository, followed by compiling and building 
+it using Maven. Once the build is complete, it generates jar and war files that are then released and pushed 
+into Nexus. Additionally, we also push a tag to the Bitbucket repository to keep track of the specific version 
+of the code that was built."
+
+Deploy Process:
+-------------------------
+"Our deployment process involves fetching the jar and war files from Nexus, and then extracting and
+ modifying the properties within them. Once the required modifications are made, we repack the jar file 
+and deploy it to our servers. Additionally, we also deploy Liquibase scripts to ensure that our database 
+schema is up to date with the latest changes."
+
+
