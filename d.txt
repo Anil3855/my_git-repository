@@ -1,0 +1,28 @@
+i have to create the environment and setting infrastructure i have create infrastruture for dev environment 
+testing and production server and after that we have doing deployment basically developer write code 
+we have write docker file entire code and we deploy that and  we are using docker hub for the storing images 
+and also we are using Ansible also downloading and installing multifull dependencies on host machine at 
+a time and we are using ci-cd pipelines for entire things
+
+what are chanllenges you are faced in current project?
+so while basically some issues deployment may get failure in that particular situation following branch
+strategy in my senario code is working developer side but is not working on production side there will
+find the bug developer fix the bug we have provide branching strategies to that 
+
+assume that git client in my system i forget my password i want update password in git how to you do that?
+in local forget our password we directly generate from github its will generate we will use that
+
+linux 
+--------
+which linux your used in your project ?
+amazon linux and ubuntu 
+what i diffrent between them ?
+basically linux are same but falvour is different 
+in amazon linux using yum install and update any package 
+in ubunt using apt in amazon linux some default package are installed wget,curl and this type of commands 
+automatically installed 
+in ubuntu we installing manuvally 
+wget command we are using download links in the internet curl also download and checks the network 
+connections whether the connection establishing properly are not 
+
+awk command in Linux ------> 

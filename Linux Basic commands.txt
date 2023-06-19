@@ -1,0 +1,50 @@
+Basic linux commands 
+===> pwd print working directory
+===> ls to check what files are in the directory
+===> cd change directory
+===> mkdir create a directory
+===> rmdir romve a directory
+===> rm delete files and directory
+===> touch create a files
+===> man get more information about a command
+===> cp copy files
+===> mv move files 
+===> locate to locate a files in linux system
+===> help how the commands can be used
+ 
+Basic Linux commands:
+
+1. mkdir----> create new directory with given name
+2. cd ----> change to directory
+3. touch----> create Emthy files
+4. cat>filename----> create new file and write the content and ctrl+D to save the
+content into file.
+5. cat file1 file2>file3----> create new file and content of both files will be copied to
+to new file
+6. cat----> Display content of file
+7. ls----> List the content of directory
+8. ls*.txt----> List all the files with given extension
+9. pwd----> current working directory
+10. cp----> copy a file or directory
+11. mv----> moves file or dirctory
+12. head----> display first 10 lines in a file
+13. tial----> display last 10 lines in a file
+14. tac----> display file content lines in reverse
+15. more ----> similar to cat and here we can display lage content by using ENTER
+SPACEBAR
+16. id ----> display id of user / group
+17. clear----> clear the screen
+18. vi -----> text editor to write programs of text
+19. grep----> filer to search given pattern in the file content
+20. diff----> compares to content of two different files
+21. ping----> check the connectivity status of server
+22. history----> review all the commands which you have entered
+23. hostname----> display host name
+24. hostname----> display host ip
+25. chmod----> change the user/group permission to access file
+26. nl----> display the line numbers
+27. wc----> given number of lines, words and characters available in the content
+28. uniq----> remove duplicate of file content/it can remove only continous
+duplicates
+29. rmdir----> removes the specified directory (directory should be emthy)
+30. rm -----> remove file/directory (directoy need not be empthy)

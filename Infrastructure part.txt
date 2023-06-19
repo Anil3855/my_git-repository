@@ -1,0 +1,68 @@
+In our workflow, we use Bitbucket to merge the code, and then we deploy it into the UAT environment.
+
+We have three environments in total:
+
+QA: Deployments are not performed in the QA environment.
+UAT: This is where we deploy the code for testing purposes.
+Production: The final version of the code is deployed here for end-users.
+Let's discuss the major servers used in our application:
+
+DB Server: We use MySQL, MongoDB, and Redis as part of our application. 
+MongoDB includes a scheduler and other collections.
+
+Ops App Server: Code deployment is exclusively done on this server. It has Nginx installed, which serves as a web server. 
+Anything related to the application, including the GUI and its functionality, is placed on this app server.
+
+Middleware - VM: The middleware server acts as a bridge, connecting different components of the application. 
+It can establish connections between databases or APIs, facilitating communication between them. Its purpose is to help two different elements work together seamlessly.
+
+
+1. Javelin QA-CGE: Server Architechture:
+--------------------------------------------------
+Generally we have 3 VM Architechture 
+one is for database where Mysql,Mangodb and Redies is running.
+
+2. DB-Server -Asia-CI: 
+-------------------------------
+In this DB Server we get all the GCP Projects.
+in the CIUK , PRODUCTION UK (landon) ,UAT and Production IEwe have cloudserver only and other than that we have only Mysql 
+runing in the docker containers.
+we have MYSQL Database in cloud SQL.
+
+3. In the Middleware we are running "Jboss" integration server.
+
+4. Javelin EU-Afr-Asia-UAT:
+Asia called singapore , and Thailand
+Africa called South Africa, and Maracco
+
+now we have Uat Environment for UAT-IE AND UAT-DK in this project only.
+
+5. OPS-DB-SERVER-IE-UAT: UAT databases running on this IE-UAT server is running in cloud
+this server as a docker container.
+
+CI-UK PROJECT: Javelin CIUK:
+
+1. we have middleware server "Jboss" is running over there
+2. we have "app server " all the micro services running over there
+3. we have DB server mango , redies running over here 
+4. we are segrigated 3 services from this servers.
+     1. payroll - GCE
+     2. Payroll - Predected
+     3. Sheduler
+
+Sheduler-CIUK: sheduler and payroll we have dedicated servers for them.
+and rest of the microservers and standalone servies deployed in app server.
+
+1. Mobile app : need deploy directly with Jira ID
+2. customer portal V2 Frontend we have only deploy job means only job perform the both action
+(build and deploy)
+  We have this on UAT-IE and CI-UK
+3. Middleware
+4 Jaelin Frontend
+   whenever we edit properties that time we need to deploy frontend -encryption - Additionally
+    properties we need to change 5th option Json file.
+
+
+
+
+

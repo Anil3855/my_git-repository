@@ -1,0 +1,52 @@
+Hi Good Morning!
+Thank you for Shortlisted me for the this interview
+yes i am Naveen kumar from Anantapur
+i have completed my graduation in Bsc Computerscience from Sv universty at tirupati
+aggregate with 6.5 CGPA
+i'm Having 3 Years of experience as python  Developer.
+prevoiusly i Worked as python developer at MAXPI TECHNOLOGIES PRIVATE 
+LIMITED Bangalore from Jan 2020 to till date.
+							
+							
+							
+Project name: ADTRAN			Duration: Dec -2021 to till date
+Project Summary: 
+ADTRAN telecommunication’s products enable data, voice, video, 
+and Internet communications across a wide variety of networking 
+infrastructures. From VOIP and SIP gateways to session border 
+controllers, ADTRAN offers all the telecommunication’s products your business needs.
+	
+Client: ADTRAN
+Tools:  Python, Pytest, GIT,JIRA,Putty
+
+Responsibilities: 
+• Developing/enhancingthe code as per the requirements usingPython.
+• Automation various requirements using python script based on clientrequirement
+• Fixing reported bugs and writing scripts.
+• Actively involved in sprint planning and performing tasks within sprint.
+• Reporting the collected bugs in JIRA.
+• Automated the Networking protocols like DHCP,DNS,BGP. 								
+							
+Project name: Nutrition Recommendation System		Duration: May - 2020 to Nov - 2021
+Role: Software Engineer (Development)
+
+Project abstract: 	
+DanOne is world’s leading food centralized nutrition recommendation 
+system to manage nutritional data based on diagnosis codes. The admin 
+user maintains a list of food types by diagnosis. The doctors can login
+and get recommended food types from the system. Patient scan also sign
+up and access the nutrition database.
+
+Client:	 DanOne
+Tools:   Python, Pytest, Docker, Linux and GIT, Automation Testing
+
+Responsibilities:
+•Involved in developing centralized nutrition
+  recommendation system to manage nutritionaldata based on 
+  diagnosis codes using Python and Django.
+• Writing Django ORM queries to get the diagnosis and nutrition details.
+• Implemented Django based templates for rich user interface.
+• Writing unit-tests using pytest modules.
+													
+													
+													
